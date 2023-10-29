@@ -1,3 +1,4 @@
+import 'package:booklyapp/constants/colors.dart';
 import 'package:booklyapp/core/utils.dart';
 import 'package:booklyapp/views/screens/home.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
           builder: (context, _) {
             return SlideTransition(
               position: slidingAnimation,
-              child: const Text(
+              child: const Text(style: TextStyle(color: white),
                 'Read Free Books',
                 textAlign: TextAlign.center,
               ),
@@ -65,7 +66,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       () {
         Get.to(() => const Home(),
             transition: Transition.downToUp,
-            duration: AssetsData.transitionduration);
+            duration: AssetsData.transitionDuration);
       },
     );
   }
