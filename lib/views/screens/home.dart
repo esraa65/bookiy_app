@@ -12,17 +12,17 @@ class Home extends StatelessWidget {
     return const SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          padding: EdgeInsets.symmetric(horizontal: 15.0,vertical: 8),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomAppBar(),
               ListViewBooks(),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 15),
+                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 18),
                 child: Text(
                   'Best Seller',
-                  style: styles.textStyle18,
+                  style: Styles.textStyle18,
                 ),
               ),
               BestSellerListViewItem()
