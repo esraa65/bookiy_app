@@ -27,7 +27,6 @@ class Home extends StatelessWidget {
                       style: Styles.textStyle18,
                     ),
                   ),
-                  // BestSellerListView()
                 ],
               ),
             ),
