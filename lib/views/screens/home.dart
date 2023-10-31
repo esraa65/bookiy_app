@@ -1,5 +1,5 @@
 import 'package:booklyapp/core/styles.dart';
-import 'package:booklyapp/views/component/best_seller/best_seller_list_view_item.dart';
+import 'package:booklyapp/views/component/best_seller/best_seller_list_view.dart';
 import 'package:booklyapp/views/component/custom_app_bar.dart';
 import 'package:booklyapp/views/component/featured_list_view.dart';
 import 'package:flutter/material.dart';
@@ -11,23 +11,30 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Scaffold(
-        body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.0,vertical: 8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomAppBar(),
-              ListViewBooks(),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 18),
-                child: Text(
-                  'Best Seller',
-                  style: Styles.textStyle18,
-                ),
+        body: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomAppBar(),
+                  ListViewBooks(),
+                  Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 8, vertical: 18),
+                    child: Text(
+                      'Best Seller',
+                      style: Styles.textStyle18,
+                    ),
+                  ),
+                  // BestSellerListView()
+                ],
               ),
-              BestSellerListViewItem()
-            ],
-          ),
+            ),
+            SliverFillRemaining(
+              child: BestSellerListView(),
+            )
+          ],
         ),
       ),
     );
