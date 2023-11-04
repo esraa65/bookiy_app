@@ -1,3 +1,4 @@
+import 'package:booklyapp/core/app_router.dart';
 import 'package:booklyapp/core/styles.dart';
 import 'package:booklyapp/core/utils.dart';
 import 'package:booklyapp/views/component/book_rating.dart';
@@ -14,7 +15,7 @@ class BestSellerListViewItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5),
       child: GestureDetector(
         onTap: (){
-          GoRouter.of(context).push('/BookDetailsView');
+          GoRouter.of(context).push(AppRouter.BookDetailsView);
         },
         child: SizedBox(
           height: 125.h,
