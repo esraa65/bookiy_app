@@ -1,12 +1,12 @@
 import 'package:booklyapp/core/styles.dart';
-import 'package:booklyapp/views/component/book_button.dart';
-import 'package:booklyapp/views/component/book_rating.dart';
+import 'package:booklyapp/views/component/book_details/book_button.dart';
+import 'package:booklyapp/views/component/book_details/book_rating.dart';
 import 'package:booklyapp/views/component/list_view_item/custom_Book_Image.dart';
-import 'package:booklyapp/views/component/smaller_list_view.dart';
+import 'package:booklyapp/views/component/book_details/smaller_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'app_bar/custom_book_details_app_bar.dart';
+import '../app_bar/custom_book_details_app_bar.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({Key? key}) : super(key: key);
