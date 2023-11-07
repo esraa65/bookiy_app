@@ -18,17 +18,17 @@ class BookDetailsViewBody extends StatelessWidget {
       slivers: [
         SliverFillRemaining(
           hasScrollBody: false,
-          child:  Column(
+          child:  Column(mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CustomBookDetailsAppBar(),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * .28),
+                padding: EdgeInsets.symmetric(horizontal: width * .15),
                 child: const CustomBookImage(),
               ),
-              // SizedBox(
-              //   height: 5.h,
-              // ),
+              SizedBox(
+                height: 5.h,
+              ),
               Text(
                 'The Jungle Book',
                 style: Styles.textStyle20.copyWith(
