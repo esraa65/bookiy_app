@@ -1,4 +1,4 @@
-import 'package:booklyapp/constants/colors.dart';
+import 'package:booklyapp/core/constants/colors.dart';
 import 'package:booklyapp/views/component/custom_button.dart';
 import 'package:flutter/material.dart';
 

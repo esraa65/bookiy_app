@@ -1,4 +1,4 @@
-import 'package:booklyapp/constants/colors.dart';
+import 'package:booklyapp/core/constants/colors.dart';
 import 'package:booklyapp/core/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
