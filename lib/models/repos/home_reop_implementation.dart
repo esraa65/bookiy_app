@@ -1,6 +1,6 @@
 import 'package:booklyapp/core/api_service.dart';
 import 'package:booklyapp/core/errors/faliure.dart';
-import 'package:booklyapp/models/book_model.dart';
+import 'package:booklyapp/models/book_model/book_model.dart';
 import 'package:booklyapp/models/repos/home_repo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
