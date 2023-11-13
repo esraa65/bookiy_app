@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) =>
-              NewestBookCubit(getIt.get<HomeRepoImplementation>()),
+              NewestBookCubit(getIt.get<HomeRepoImplementation>())..getNewestBooks(),
         ),
       ],
       child: ScreenUtilInit(

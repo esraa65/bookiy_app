@@ -10,7 +10,7 @@ class SearchItemList extends StatelessWidget {
       shrinkWrap: true,
       itemCount: 10,
       itemBuilder: (context, index) {
-        return const BestSellerListViewItem();
+        return Text('data');
       },
     );();
   }

@@ -12,6 +12,7 @@ class Home extends StatelessWidget {
     return const SafeArea(
       child: Scaffold(
         body: CustomScrollView(
+          physics:  BouncingScrollPhysics(),
           slivers: [
             SliverToBoxAdapter(
               child: Column(
