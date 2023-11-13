@@ -1,3 +1,4 @@
+import 'package:booklyapp/core/constants/colors.dart';
 import 'package:booklyapp/view_model/featured_books_cubit/featured_book_cubit.dart';
 import 'package:booklyapp/views/component/custom_error_message.dart';
 import 'package:booklyapp/views/component/list_view_item/custom_Book_Image.dart';
@@ -36,7 +37,7 @@ class ListViewBooks extends StatelessWidget {
           } else {
             return const Center(
                 child: CircularProgressIndicator(
-              color: Colors.red,
+              color: red,
             ));
           }
         },

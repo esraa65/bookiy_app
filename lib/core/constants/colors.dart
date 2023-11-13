@@ -5,3 +5,4 @@ const Color yellow = Color(0xffFFDD4F);
 const Color gray = Color(0xff707070);
 const Color black = Color(0xff000000);
 const Color pink = Color(0xffEF8262);
+const Color red = Color(0xffd01313);
