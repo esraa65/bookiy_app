@@ -68,7 +68,7 @@ class BookDetailsViewBody extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30.h,),
-              const  SmallerListView()
+              const  SimilarListView()
             ],
           ) ,
         )
