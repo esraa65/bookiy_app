@@ -1,4 +1,7 @@
+import 'package:booklyapp/core/service_locator.dart';
 import 'package:booklyapp/core/styles.dart';
+import 'package:booklyapp/models/repos/home_reop_implementation.dart';
+import 'package:booklyapp/view_model/search_cubit/search_cubit.dart';
 import 'package:booklyapp/views/component/custom_search_text_field.dart';
 import 'package:booklyapp/views/component/search/search_item_list.dart';
 import 'package:flutter/material.dart';
@@ -8,23 +11,21 @@ class SearchBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(crossAxisAlignment: CrossAxisAlignment.start,
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 15),
+          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 15),
           child: CustomSearchTextField(),
-
         ),
         Padding(
-          padding:
-          EdgeInsets.symmetric(horizontal: 8, vertical: 18),
+          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 18),
           child: Text(
             'Search Seller',
             style: Styles.textStyle18,
           ),
         ),
-       Expanded(child: SearchItemList())
-
+        Expanded(child: SearchItemList())
       ],
     );
   }

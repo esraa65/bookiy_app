@@ -46,7 +46,7 @@ class BestSellerListViewItem extends StatelessWidget {
                       height: 3.h,
                     ),
                     Text(
-                      bookModel.volumeInfo.authors![0],
+                      bookModel.volumeInfo.authors?[0]??'',
                       style: Styles.textStyle14,
                     ),
                     SizedBox(
