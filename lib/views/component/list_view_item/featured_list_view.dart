@@ -1,13 +1,14 @@
+import 'package:booklyapp/core/app_router.dart';
 import 'package:booklyapp/core/constants/colors.dart';
 import 'package:booklyapp/view_model/featured_books_cubit/featured_book_cubit.dart';
 import 'package:booklyapp/views/component/custom_error_message.dart';
 import 'package:booklyapp/views/component/list_view_item/custom_Book_Image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class ListViewBooks extends StatelessWidget {
   const ListViewBooks({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,9 +25,15 @@ class ListViewBooks extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: CustomBookImage(
-                      imageurl:
-                          state.books[index].volumeInfo.imageLinks.thumbnail,
+                    child: GestureDetector(
+                      onTap: () {
+                        GoRouter.of(context).push(AppRouter.bookdetailsview,
+                            extra: state.books[index]);
+                      },
+                      child: CustomBookImage(
+                        imageurl:
+                            state.books[index].volumeInfo.imageLinks.thumbnail,
+                      ),
                     ),
                   );
                 },

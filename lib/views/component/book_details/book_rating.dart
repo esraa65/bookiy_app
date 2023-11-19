@@ -1,3 +1,4 @@
+
 import 'package:booklyapp/core/constants/colors.dart';
 import 'package:booklyapp/core/styles.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class BookRating extends StatelessWidget {
       required this.rating})
       : super(key: key);
   final MainAxisAlignment mainAxisAlignment;
-  final int rating;
+  final num rating;
   final int count;
   @override
   Widget build(BuildContext context) {
