@@ -1,4 +1,3 @@
-import 'package:booklyapp/core/app_router.dart';
 import 'package:booklyapp/core/constants/colors.dart';
 import 'package:booklyapp/view_model/search_cubit/search_cubit.dart';
 import 'package:booklyapp/views/component/best_seller/best_seller_list_view_item.dart';

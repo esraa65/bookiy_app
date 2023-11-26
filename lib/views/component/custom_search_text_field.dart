@@ -31,7 +31,8 @@ class CustomSearchTextField extends StatelessWidget {
               }
             },
           )),
-      onEditingComplete:() {
+
+      onChanged: (value) {
         final searchController = SearchCubit.get(context).searchController;
         if (searchController.text.isEmpty) {
           SearchCubit.get(context).getBookName(bookName: searchController.text);

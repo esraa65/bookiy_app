@@ -1,7 +1,4 @@
-import 'package:booklyapp/core/service_locator.dart';
 import 'package:booklyapp/core/styles.dart';
-import 'package:booklyapp/models/repos/home_reop_implementation.dart';
-import 'package:booklyapp/view_model/search_cubit/search_cubit.dart';
 import 'package:booklyapp/views/component/custom_search_text_field.dart';
 import 'package:booklyapp/views/component/search/search_item_list.dart';
 import 'package:flutter/material.dart';

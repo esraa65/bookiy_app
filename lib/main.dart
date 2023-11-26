@@ -4,6 +4,7 @@ import 'package:booklyapp/core/service_locator.dart';
 import 'package:booklyapp/models/repos/home_reop_implementation.dart';
 import 'package:booklyapp/view_model/featured_books_cubit/featured_book_cubit.dart';
 import 'package:booklyapp/view_model/newest_Book_cubit/newest_book_cubit.dart';
+import 'package:booklyapp/views/component/simple_bloc_observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -11,7 +12,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   setupservicelocator();
-  runApp(const MyApp());
+
+  BlocOverrides.runZoned((){
+    runApp(const MyApp());
+  },
+  blocObserver: SimpleBlocObserver()
+  );
 }
 
 class MyApp extends StatelessWidget {
